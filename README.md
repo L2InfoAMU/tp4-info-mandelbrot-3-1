@@ -7,5 +7,5 @@ Le but du TP sera de corriger le code de la classe `Complex` en s'aidant de test
 
 ## Membres du projet
 
-- WEYNACHTER, Gilian, 2
-- GENTILE, Gianni, 2
+- WEYNACHTER Gilian, Groupe 2
+- GENTILE Gianni, Groupe 2
