@@ -98,6 +98,14 @@ public class ComplexTest {
     }
 
     @Test
+    void testPow(){
+        Complex c1 = new Complex(1,-2);
+        Complex c1pow3 = new Complex(-11,2);
+        assertEquals(c1pow3,c1.pow(3));
+        assertEquals(Complex.ONE,c1.pow(0));
+    }
+
+    @Test
     void testDivide(){
         assertEquals(onePlusI, onePlusI.divide(Complex.ONE));
         assertEquals(new Complex(0.5, 0), Complex.ONE.divide(two));
