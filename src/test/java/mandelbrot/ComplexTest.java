@@ -168,4 +168,14 @@ public class ComplexTest {
         assertEquals(1,c1.real);
         assertEquals(-12,c2.real);
     }
+
+    @Test
+    void testSquaredModulus(){
+        Complex c1 = new Complex(0,1);
+        assertEquals(4,two.squaredModulus());
+        assertEquals(1,c1.squaredModulus());
+        assertEquals(2,oneMinusI.squaredModulus());
+    }
+
+    
 }
