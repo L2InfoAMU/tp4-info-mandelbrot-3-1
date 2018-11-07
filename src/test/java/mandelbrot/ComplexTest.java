@@ -90,7 +90,7 @@ public class ComplexTest {
 
     }
     @Test
-    void testSubstract(){
+    void testSubtract(){
         assertEquals(minusOne, Complex.ZERO.subtract(Complex.ONE));
         assertEquals(oneMinusI, Complex.ONE.subtract(Complex.I));
         assertEquals(new Complex(real-1,imaginary-1),
@@ -154,10 +154,18 @@ public class ComplexTest {
         Complex c1 = new Complex(1,1);
         Complex c2 = new Complex(1,1);
         int i1 = 3;
-        Complex i2 = null;
+        Complex cNull = null;
         assertTrue(Complex.ONE.equals(Complex.ONE));
         assertFalse(c1.equals(i1)); // compare un complexe avec un entier
-        assertFalse(c1.equals(i2));
+        assertFalse(c1.equals(cNull));
         assertTrue(c1.equals(c2));
+    }
+
+    @Test
+    void testReal(){
+        Complex c1 = new Complex(1,1);
+        Complex c2 = new Complex(-12,3);
+        assertEquals(1,c1.real);
+        assertEquals(-12,c2.real);
     }
 }
