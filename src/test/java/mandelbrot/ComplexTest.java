@@ -182,4 +182,11 @@ public class ComplexTest {
         assertEquals(2,twoI.modulus());
     }
 
+    @Test
+    void testScale(){
+        Complex c1 = new Complex(1,1);
+        Complex c2 = new Complex(2,2);
+        assertEquals(c2,c1.scale(2));
+        assertEquals(Complex.ZERO,c1.scale(0));
+    }
 }
